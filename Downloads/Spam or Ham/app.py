@@ -26,3 +26,6 @@ if c2.button("Predict",type="primary"):
     msg = transformer.transform([msg])
     prect = model.predict(msg)
     st.write(f"## The above message is :{'green' if label[prect[0]] == 0 else 'red'}[{label[prect[0]]}]")
+
+
+
